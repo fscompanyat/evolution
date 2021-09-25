@@ -1,0 +1,11 @@
+
+  #box {
+    width: 200px;
+    color: black;
+    background-color: darkgrey;
+    border:  2px solid whitesmoke;
+    border-radius: 1em 1em 1em 1em;
+    margin:  20px auto;
+    padding: 2em;
+    height: 200px;
+  }
