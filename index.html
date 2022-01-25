@@ -17,10 +17,14 @@ body{
         font-weight: 100;
         color: #E2DBDB;
         margin: 0em;
-}  
+	    }	    
+    h1 a{
+	text-decoration: none;    
+	}  
     header{
     background: #2F2D2C;
     text-align: center;
+    display: inline-block;
 }
 	.sidenav {
 	  height: 100%;
@@ -116,13 +120,14 @@ function closeNav() {
 </script>	
 	
     <header>
-	    <h1>Evolution</h1>
-	    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	    <h1><a href="index.html>Evolution</a></h1>
+	    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
        </header> 
 
 
        <nav>
            <ul>
+		<li><a href="index.html">Home</a></li>
                 <li><a href="apple.html">Apple</a></li>
                 <li><a href="samsung.html">Samsung</a></li>
                 <li><a href="windows.html">Windows</a></li>
