@@ -32,11 +32,162 @@ body{
     <link href="style.css" type="text/css" rel="stylesheet" />
 	<meta name="robots" content="nosnippet, notranslate"/>
 </head>
-
-<body>
-    <header>
-        <h1>Evolution</h1>
-       </header> 
+<style type="text/css">
+    body{
+            background-color: black;
+            font-size: 100%;
+            margin: 0em;
+            padding: 0em;
+    }
+    
+        h1{
+            font-size: 2.5em;
+            line-height: 2em;
+            font-weight: 100;
+            color: #E2DBDB;
+            margin: 0em;
+            }	    
+        h1 a{
+        text-decoration: none; 
+         color: #E2DBDB;
+        }  
+        header{
+        width : 100%;
+        background: #2F2D2C;
+        line-height: 2em;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+        header h1 span{
+            display: none;
+        }
+    
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(44, 44, 44);
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+    
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+          display: block;
+          transition: 0.3s;
+        }
+    
+        .sidenav a:hover {
+          text-decoration: underline;
+          color: #DCDCDC;
+        }
+    
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+    
+    nav{
+        color: #DCDCDC;
+        background: transparent;
+    }
+    
+    nav ul{
+        align-items: center;
+        text-align: center;
+    }
+    nav ul li{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        font-size: 1.3em;
+        padding: 40px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #DCDCDC;
+    }
+    
+    nav ul li a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+    
+    @media (max-width: 685px){
+        nav ul li{
+        display: none;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        }
+        header h1 span{
+            display: inline-block;
+        }
+        header{
+        position: sticky;
+        top: 0;
+    }
+    }
+        </style>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        <meta name="robots" content="nosnippet, notranslate"/>
+    </head>
+    
+    <body>
+        
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>	
+        
+        <header>
+            <h1><a href="index.html">Evolution</a>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></h1>
+           </header> 
+    
+    
+           <nav>
+               <ul>
+                    <li><a href="apple.html">Apple</a></li>
+                    <li><a href="samsung.html">Samsung</a></li>
+                    <li><a href="windows.html">Windows</a></li>
+                    <li><a href="nintendo.html">Nintendo</a></li>
+               </ul>
+           </nav>
+        
+        
+        <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="apple.html">Apple</a>
+              <a href="samsung.html">Samsung</a>
+              <a href="windows.html">Windows</a>
+              <a href="nintendo.html">Nintendo</a>
+        </div>
 
     <div id="box">
         <div id="spalte">
