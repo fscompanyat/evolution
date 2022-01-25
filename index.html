@@ -23,7 +23,7 @@ body{
 	 color: #E2DBDB;
 	}  
     header{
-    witdh : 100%;
+    width : 100%;
     background: #2F2D2C;
     line-height: 2em;
     display: inline-block;
@@ -31,6 +31,11 @@ body{
     align-items: center;
     
 }
+
+    header h1 span{
+        display: none;
+    }
+
 	.sidenav {
 	  height: 100%;
 	  width: 0;
@@ -38,7 +43,7 @@ body{
 	  z-index: 1;
 	  top: 0;
 	  left: 0;
-	  background-color: #111;
+	  background-color: rgb(44, 44, 44);
 	  overflow-x: hidden;
 	  transition: 0.5s;
 	  padding-top: 60px;
@@ -99,7 +104,10 @@ nav ul li a:hover{
     text-align: center;
     align-items: center;
     padding: 20px;
-}
+    }
+    header h1 span{
+        display: inline-block;
+    }
 }
     </style>
 
